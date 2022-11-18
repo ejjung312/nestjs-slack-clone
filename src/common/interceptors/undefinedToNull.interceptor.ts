@@ -6,6 +6,9 @@ import {
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
 
+/**
+ * 인터셉터 -> AOP의 역할
+ */
 @Injectable()
 export class UndefinedToNullInterceptor implements NestInterceptor {
   intercept(
